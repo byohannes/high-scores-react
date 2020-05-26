@@ -1,5 +1,5 @@
 import React from 'react';
-import Scoreboard from './components/Scoreboard';
+import ScoreBoard from './components/ScoreBoard';
 import allCountryScores from './components/Scores';
 import './App.css';
 
@@ -12,7 +12,7 @@ const App = () => {
       {allCountryScores
         .sort ((a, b) => a.name.localeCompare (b.name))
         .map ((element, index) => (
-          <Scoreboard key={index} name={element.name} scores={element.scores} />
+          <ScoreBoard key={index} name={element.name} scores={element.scores} />
         ))}
     </div>
   );

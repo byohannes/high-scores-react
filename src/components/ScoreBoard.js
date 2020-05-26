@@ -1,6 +1,6 @@
 import React from 'react';
-import PlayerScore from './Playerscore';
-import PlayerName from './Playername';
+import PlayerScore from './PlayerScore';
+import PlayerName from './PlayerName';
 
 const Scoreboard = props => {
   return (
