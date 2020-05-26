@@ -1,0 +1,38 @@
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid blue;
+  padding: 15px;
+  width: 30%;
+  margin: auto;
+}
+.score-board {
+  border: 10px solid lightgreen;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+}
+
+.scorer-names-scores {
+  display: flex;
+  justify-content: center;
+}
+
+.score-list-name {
+  font-size: 1.5rem; 
+  margin-right: 20px;
+  text-align: left;
+}
+
+.score-list-score {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.high-scores-header {
+  color: rgb(24, 170, 228);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
