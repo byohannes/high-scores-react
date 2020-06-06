@@ -4,13 +4,14 @@ import allCountryScores from './components/Scores';
 import './App.css';
 
 const App = () => {
-  const [country, setCountry] = useState(allCountryScores);
+  const [allCountry, setAllCountry] = useState(allCountryScores);
+  const [input, setInput] = useState('');
   const handleInput = (e) => {
-    const searchInput = e.target.value.toLowerCase();
-    setCountry(
-      country.filter((item) => item.name.toLowerCase().includes(searchInput))
-    );
+    setInput(e.target.value.toLowerCase());
   };
+  const filteredData = allCountry.filter((item) =>
+    item.name.toLowerCase().includes(input)
+  );
 
   return (
     <div className="container">
@@ -22,7 +23,7 @@ const App = () => {
         placeholder="Search For A Country..."
       />
 
-      {country
+      {filteredData
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((element, index) => (
           <ScoreBoard key={index} name={element.name} scores={element.scores} />
