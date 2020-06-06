@@ -18,7 +18,10 @@ let allCountryScores = [
   },
   {
     name: 'England',
-    scores: [{n: 'Jonny', s: 202020}, {n: 'Chris', s: 202021}],
+    scores: [
+      {n: 'Jonny', s: 202020},
+      {n: 'Chris', s: 202021},
+    ],
   },
   {
     name: 'Brazil',

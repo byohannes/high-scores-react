@@ -1,11 +1,9 @@
 import React from 'react';
 
-const PlayerName = props => {
+const PlayerName = ({element}) => {
   return (
     <div>
-      <span className="scorer-name-span">
-        {props.element.n.toUpperCase ()}
-      </span>
+      <span className="scorer-name">{element.n.toUpperCase()}</span>
     </div>
   );
 };

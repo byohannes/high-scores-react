@@ -1,11 +1,9 @@
 import React from 'react';
 
-const PlayerScore = props => {
+const PlayerScore = ({element}) => {
   return (
     <div>
-      <span className="scorer-score-span">
-        {props.element.s}
-      </span>
+      <span className="scorer-score">{element.s}</span>
     </div>
   );
 };
