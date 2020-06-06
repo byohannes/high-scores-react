@@ -13,6 +13,7 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  align-content: center; 
   min-height: 150px;
   border: none;
   border-radius: 5px; 
@@ -52,8 +53,8 @@
 }
 
 ::placeholder {
-  font-size: 1.2rem;
-  padding-left: 8rem; 
+  font-size: 1rem;
+  padding-left: 2rem; 
 }
 .scorer-score{
  font-size: 1.6rem;  
