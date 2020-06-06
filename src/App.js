@@ -6,9 +6,9 @@ import './App.css';
 const App = () => {
   const [country, setCountry] = useState(allCountryScores);
   const handleInput = (e) => {
-    const findCountry = e.target.value.toLowerCase();
+    const searchInput = e.target.value.toLowerCase();
     setCountry(
-      country.filter((item) => item.name.toLowerCase().includes(findCountry))
+      country.filter((item) => item.name.toLowerCase().includes(searchInput))
     );
   };
 
